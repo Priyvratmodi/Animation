@@ -1,0 +1,64 @@
+body {
+  margin: 0;
+  overflow: hidden;
+  background: #222;
+}
+
+#snake-container {
+  position: absolute;
+  top: 0; left: 0; width: 100vw; height: 100vh;
+  pointer-events: none;
+}
+
+.snake-segment {
+  position: absolute;
+  width: 20px; height: 20px;
+  background: limegreen;
+  border-radius: 50%;
+  box-shadow: 0 0 8px #0f0;
+}
+
+.snake-head {
+  background: #4caf50;
+  z-index: 2;
+  border-radius: 50% 50% 60% 60% / 50% 50% 80% 80%;
+  position: absolute;
+}
+
+.snake-eye {
+  position: absolute;
+  width: 5px;
+  height: 5px;
+  background: #fff;
+  border-radius: 50%;
+  top: 6px;
+}
+
+.snake-eye.left {
+  left: 4px;
+}
+
+.snake-eye.right {
+  right: 4px;
+}
+
+.snake-mouth {
+  position: absolute;
+  width: 8px;
+  height: 3px;
+  background: #222;
+  border-radius: 0 0 8px 8px;
+  bottom: 3px;
+  left: 6px;
+}
+
+.snake-tail {
+  background: #388e3c;
+  z-index: 1;
+  border-radius: 60% 60% 50% 50% / 80% 80% 50% 50%;
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  left: 2px;
+  top: 2px;
+} 
